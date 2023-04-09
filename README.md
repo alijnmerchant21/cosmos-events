@@ -8,4 +8,4 @@ Created and Hosted by @alijnmerchant21
 TBD
 
 For any questions / queries write to:
-[Ali M] (http://twitter.com/ali_the_curios/)
+[Ali M](http://twitter.com/ali_the_curios/)
