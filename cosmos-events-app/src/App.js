@@ -18,8 +18,7 @@ import EventList from './components/EventList';
 import EventDetails from './components/EventDetails';
 import LoginForm from './components/LoginForm';
 import SubmitEventForm from './components/SubmitEventForm';
-//import { useHistory } from 'react-router-dom';
-//import firebase from 'firebase/app';
+
 
 
 
