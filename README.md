@@ -25,14 +25,19 @@ After both options, user is prompted to Login / Continue as Guest
 1. User is presented with a list of all events
 
     a. Filter events based on **Location** and **When**
+
     **Location:** List all cities where events are currently happening
-        **When:** Today, This Week, This Month, Next 3 Months
+
+    **When:** Today, This Week, This Month, Next 3 Months
 
 2. User selects a particular event
 
     a. List all details about the event
+
     b. List any side event during that event
+
     c. List everyone attending that event (Only available to logged in users)
+
     d. List similar event you might be interested in
 
 3. User is prompted to "Attend the event"
@@ -45,12 +50,19 @@ After both options, user is prompted to Login / Continue as Guest
 2. Prompt user to fill a form (As Organizer or Guest)
 
     a. Name of Organizer or Contact Person
+
     b. Best email to reach
+
     c. Event Name
+
     d. Event Description
+
     e. Event website + Social
+
     f. Event Location
+
     g. Event Date
+
     h. Tags (Eg: Developer, Hackathon, etc)
 
 3. Events are added to Event list by admins
