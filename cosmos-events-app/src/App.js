@@ -18,7 +18,7 @@ import EventList from './components/EventList';
 import EventDetails from './components/EventDetails';
 import LoginForm from './components/LoginForm';
 import SubmitEventForm from './components/SubmitEventForm';
-import { BrowserRouter as Router, Route, Switch, useHistory } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, useHistory } from 'react-router-dom';
 
 
 
