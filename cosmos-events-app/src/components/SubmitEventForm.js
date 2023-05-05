@@ -3,12 +3,19 @@ import { useNavigate } from 'react-router-dom';
 import { db } from '../firebase';
 
 //import firebase from 'firebase/app';
-import * as firebase from 'firebase/app';
+import firebase from 'firebase/compat/app';
+//import * as firebase from 'firebase/app';
 
-import 'firebase/firestore';
+//import 'firebase/firestore';
+import 'firebase/compat/firestore';
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
+
+
+
+
 
 // Export the Firestore database
 // export const db = firebase.firestore();

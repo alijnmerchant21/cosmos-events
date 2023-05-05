@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { auth, provider } from '../firebase';
+import 'firebase/compat/auth';
+//import { auth, provider } from '../firebase';
 
 function LoginForm() {
   const history = useNavigate();
