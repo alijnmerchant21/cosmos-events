@@ -1,10 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import 'firebase/compat/auth';
-//import { auth, provider } from '../firebase';
+import { auth } from 'firebase';
+import { provider } from 'firebase';
 
 function LoginForm() {
-  const history = useNavigate();
+const history = useNavigate();
 
   function handleSignIn() {
     auth.signInWithPopup(provider).then(() => {

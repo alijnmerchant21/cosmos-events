@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { db } from '../firebase';
-
-//import firebase from 'firebase/app';
+//import { db } from '../firebase';
+import { initializeApp } from "firebase/compat/app"
+import { getAuth, GoogleAuthProvider } from "firebase/auth"
 import firebase from 'firebase/compat/app';
-//import * as firebase from 'firebase/app';
-
-//import 'firebase/firestore';
 import 'firebase/compat/firestore';
+import { firebaseConfig } from '../config';
+export const db = firebaseApp.firestore()
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+const firebaseApp = firebase.initializeApp ({})
 
-
-
-
+//import firebase from 'firebase/app';
+//import * as firebase from 'firebase/app';
+//import 'firebase/firestore';
 
 // Export the Firestore database
 // export const db = firebase.firestore();

@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from 'react';
 //import { auth } from '../firebase';
-import 'firebase/compat/auth';
+import { auth } from 'firebase';
+//import { auth } from 'firebase/compat/auth';
+//import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
+//const db = firebaseApp.firestore();
+//const auth = firebase.auth();
+
+import firebase from 'firebase';
 
 function EventDetails() {
   const [attendees, setAttendees] = useState([]);
@@ -38,3 +45,5 @@ function EventDetails() {
 }
 
 export default EventDetails;
+
+

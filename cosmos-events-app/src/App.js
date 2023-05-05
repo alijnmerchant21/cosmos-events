@@ -19,6 +19,7 @@ import EventDetails from './components/EventDetails';
 import LoginForm from './components/LoginForm';
 import SubmitEventForm from './components/SubmitEventForm';
 import { BrowserRouter as Router, Switch, useNavigate } from 'react-router-dom';
+import firebase from 'firebase/app';
 
 function App() {
   return (
