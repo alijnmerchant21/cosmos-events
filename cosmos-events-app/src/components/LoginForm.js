@@ -1,9 +1,9 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { auth, provider } from '../firebase';
 
 function LoginForm() {
-  const history = useHistory();
+  const history = useNavigate();
 
   function handleSignIn() {
     auth.signInWithPopup(provider).then(() => {
