@@ -11,7 +11,9 @@ The /submit route renders the SubmitEventForm component, which allows the user t
 */
 
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Switch, Route } from "react-router-dom";
+import { Routes ,Route } from 'react-router-dom';
 import EventList from './components/EventList';
 import EventDetails from './components/EventDetails';
 import LoginForm from './components/LoginForm';
