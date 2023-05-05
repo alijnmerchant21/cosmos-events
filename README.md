@@ -24,7 +24,7 @@ After both options, user is prompted to Login / Continue as Guest
 
 1. User is presented with a list of all events
 
-    a. Filter events based on **Location** and **When**
+    *Filter events based on **Location** and **When***
 
     **Location:** List all cities where events are currently happening
 
