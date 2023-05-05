@@ -12,7 +12,7 @@ The /submit route renders the SubmitEventForm component, which allows the user t
 
 import React from 'react';
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Switch, Route } from "react-router-dom";
+//import { Switch, Route } from "react-router-dom";
 import { Routes ,Route } from 'react-router-dom';
 import EventList from './components/EventList';
 import EventDetails from './components/EventDetails';
@@ -28,7 +28,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Switch>
+        <Routes>
           <Route exact path="/">
             <EventList />
           </Route>
@@ -41,7 +41,7 @@ function App() {
           <Route exact path="/submit">
             <SubmitEventForm />
           </Route>
-        </Switch>
+        </Routes>
       </div>
     </Router>
   );
