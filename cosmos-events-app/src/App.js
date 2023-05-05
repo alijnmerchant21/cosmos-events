@@ -11,15 +11,15 @@ The /submit route renders the SubmitEventForm component, which allows the user t
 */
 
 import React from 'react';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+//import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 //import { Switch, Route } from "react-router-dom";
 import { Routes ,Route } from 'react-router-dom';
 import EventList from './components/EventList';
 import EventDetails from './components/EventDetails';
 import LoginForm from './components/LoginForm';
 import SubmitEventForm from './components/SubmitEventForm';
-import { useHistory } from 'react-router-dom';
-import firebase from 'firebase/app';
+//import { useHistory } from 'react-router-dom';
+//import firebase from 'firebase/app';
 
 
 
