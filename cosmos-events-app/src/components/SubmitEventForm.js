@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { db } from '../firebase';
 
 function SubmitEventForm() {
   const [eventName, setEventName] = useState('');
   const [eventLocation, setEventLocation] = useState('');
   const [eventTime, setEventTime] = useState('');
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,7 +16,7 @@ function SubmitEventForm() {
       time: eventTime,
     })
     .then(() => {
-      history.push('/');
+      navigate.push('/');
     })
     .catch((error) => {
       console.error('Error adding document: ', error);
