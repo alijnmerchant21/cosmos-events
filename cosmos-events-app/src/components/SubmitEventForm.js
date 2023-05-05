@@ -1,24 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-//import { db } from '../firebase';
-import { initializeApp } from "firebase/compat/app"
-import { getAuth, GoogleAuthProvider } from "firebase/auth"
+import { firebaseConfig } from '../config';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
-import { firebaseConfig } from '../config';
-export const db = firebaseApp.firestore()
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
-const firebaseApp = firebase.initializeApp ({})
-
-//import firebase from 'firebase/app';
-//import * as firebase from 'firebase/app';
-//import 'firebase/firestore';
-
-// Export the Firestore database
-// export const db = firebase.firestore();
+const db = firebase.firestore();
 
 function SubmitEventForm() {
   const [eventName, setEventName] = useState('');
@@ -34,7 +22,7 @@ function SubmitEventForm() {
       time: eventTime,
     })
     .then(() => {
-      navigate.push('/');
+      navigate('/');
     })
     .catch((error) => {
       console.error('Error adding document: ', error);

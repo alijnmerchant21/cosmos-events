@@ -1,19 +1,12 @@
 import React, { useState, useEffect } from 'react';
-//import { auth } from '../firebase';
-import { auth } from 'firebase';
-//import { auth } from 'firebase/compat/auth';
-//import firebase from 'firebase/compat/app';
-import 'firebase/compat/firestore';
-//const db = firebaseApp.firestore();
-//const auth = firebase.auth();
-
-import firebase from 'firebase';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
 
 function EventDetails() {
   const [attendees, setAttendees] = useState([]);
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((user) => {
+    const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         // Fetch attendees from the database and set the state
       } else {
@@ -45,5 +38,3 @@ function EventDetails() {
 }
 
 export default EventDetails;
-
-

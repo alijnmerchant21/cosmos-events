@@ -1,14 +1,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { auth } from 'firebase';
-import { provider } from 'firebase';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
 
 function LoginForm() {
-const history = useNavigate();
+  const navigate = useNavigate();
+  const provider = new firebase.auth.GoogleAuthProvider();
 
   function handleSignIn() {
-    auth.signInWithPopup(provider).then(() => {
-      history.push('/');
+    firebase.auth().signInWithPopup(provider).then(() => {
+      navigate('/');
     });
   }
 
