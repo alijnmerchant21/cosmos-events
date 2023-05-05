@@ -2,6 +2,17 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { db } from '../firebase';
 
+//import firebase from 'firebase/app';
+import * as firebase from 'firebase/app';
+
+import 'firebase/firestore';
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+// Export the Firestore database
+// export const db = firebase.firestore();
+
 function SubmitEventForm() {
   const [eventName, setEventName] = useState('');
   const [eventLocation, setEventLocation] = useState('');
