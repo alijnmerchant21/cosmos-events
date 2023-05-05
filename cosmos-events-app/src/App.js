@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+/*
+Explanation:
+
+We're using the BrowserRouter component from react-router-dom to handle client-side routing in our application. 
+We define four different routes, each of which renders a different component:
+
+The / route renders the EventList component.
+The /events/:eventId route renders the EventDetails component, which displays details about a specific event.
+The /login route renders the LoginForm component, which allows the user to log in to the application.
+The /submit route renders the SubmitEventForm component, which allows the user to submit a new event to the application.
+*/
+
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import EventList from './components/EventList';
+import EventDetails from './components/EventDetails';
+import LoginForm from './components/LoginForm';
+import SubmitEventForm from './components/SubmitEventForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <EventList />
+          </Route>
+          <Route exact path="/events/:eventId">
+            <EventDetails />
+          </Route>
+          <Route exact path="/login">
+            <LoginForm />
+          </Route>
+          <Route exact path="/submit">
+            <SubmitEventForm />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
