@@ -16,8 +16,11 @@ Create a Web App that list all events, gives users option to add their favourite
 
 1. User visits cosmos.events (Place Holder)
 2. User is prompted with two options
+
     a. Browse all events
+    
     b. Submit an event
+    
 After both options, user is prompted to Login / Continue as Guest
 
 ### User selects browse all events
